@@ -3,120 +3,387 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GiloByte - Apps, Games and Web Solutions">
-<title>GiloByte</title>
+<title>GiloByte — cozy little games for Android</title>
+<meta name="description" content="GiloByte is a small indie studio making cozy, pick-up-and-play puzzles and card games for Android — free, offline-friendly, and built to fit a coffee break.">
+<meta name="theme-color" content="#fff7f0">
+<link rel="icon" href="/images/logo.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="GiloByte — cozy little games for Android">
+<meta property="og:description" content="A small indie studio making cozy puzzles and card games for Android. Free, offline-friendly, made with a little Nepali soul.">
+<meta property="og:image" content="https://gilobyte.com/images/banner.png">
+<meta property="og:url" content="https://gilobyte.com">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">
-        <img src="/images/logo.png" alt="GiloByte">
-        <span>GiloByte</span>
-    </div>
+<!-- Reusable Google Play icon (colour + white monochrome) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="gplay" viewBox="0 0 24 24">
+    <path fill="#00c3ff" d="M1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924z"/>
+    <path fill="#00e676" d="M13.544 10.989l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.153l11.04 10.947z"/>
+    <path fill="#ffce00" d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594z"/>
+    <path fill="#ff3d47" d="M13.544 13.056l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/>
+  </symbol>
+  <symbol id="gplay-mono" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.153l11.04 10.947zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/>
+  </symbol>
+</svg>
 
-    <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+<!-- Decorative background -->
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <span class="blob b3"></span><span class="blob b4"></span>
+</div>
 
-<section class="hero">
-    <div class="hero-content">
-        <span class="tag">🚀 Apps • Games • Web Solutions</span>
-
-        <h1>Building Digital Experiences That Matter</h1>
-
-        <p>
-            We help businesses, startups and creators transform ideas into
-            high-quality apps, games and web platforms.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Start a Project</a>
-            <a href="#services" class="btn btn-secondary">Explore Services</a>
-        </div>
-    </div>
-
-    <div class="hero-image">
-        <img src="/images/banner.png" alt="GiloByte Banner">
-    </div>
-</section>
-
-<section class="stats">
-    <div><h2>10+</h2><p>Projects Delivered</p></div>
-    <div><h2>100%</h2><p>Client Focused</p></div>
-    <div><h2>24/7</h2><p>Support</p></div>
-</section>
-
-<section id="services" class="section">
-    <h2>Our Services</h2>
-
-    <div class="services-grid">
-        <div class="card">
-            <h3>📱 App Development</h3>
-            <p>Cross-platform and native mobile applications.</p>
-        </div>
-
-        <div class="card">
-            <h3>🎮 Game Development</h3>
-            <p>Casual, multiplayer and custom gaming solutions.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌐 Web Development</h3>
-            <p>Fast, modern and scalable web platforms.</p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Custom Solutions</h3>
-            <p>Tailored software built around your needs.</p>
-        </div>
-    </div>
-</section>
-
-<section id="why" class="section">
-    <h2>Why GiloByte?</h2>
-
-    <div class="services-grid">
-        <div class="card">
-            <h3>🚀 Fast Delivery</h3>
-            <p>Efficient workflows and rapid execution.</p>
-        </div>
-
-        <div class="card">
-            <h3>🧹 Clean Code</h3>
-            <p>Maintainable, scalable and reliable solutions.</p>
-        </div>
-
-        <div class="card">
-            <h3>🎨 Modern Design</h3>
-            <p>Beautiful interfaces focused on user experience.</p>
-        </div>
-
-        <div class="card">
-            <h3>🤝 Long-Term Support</h3>
-            <p>We stay with you after launch.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Let's Build Something Great</h2>
-    <p>Have an idea or project? Let's discuss it.</p>
-
-    <a href="mailto:gilobyte.com@gmail.com" class="btn btn-primary">
-        Contact Us
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="inner">
+    <a class="brand" href="#top" aria-label="GiloByte home">
+      <span class="mark"><span>G</span></span>
+      GiloByte
     </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="lnk" href="#games">Games</a>
+      <a class="lnk" href="#studio">Studio</a>
+      <a class="lnk" href="#culture">Culture</a>
+      <a class="lnk" href="#contact">Contact</a>
+    </nav>
+    <a class="btn grad small nav-cta" href="https://play.google.com/store/apps/developer?id=GiloByte" target="_blank" rel="noopener">
+      <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Google Play
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="grid">
+      <div class="hero-copy">
+        <h1>Little games you'll <span class="pop">actually finish.</span></h1>
+        <p class="lede">GiloByte is a tiny studio making cozy puzzles and card games for Android — free, offline-friendly, and just the right size for a coffee break.</p>
+        <div class="hero-actions">
+          <a class="btn grad" href="#games">Browse the games</a>
+          <a class="btn ghost" href="https://play.google.com/store/apps/developer?id=GiloByte" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay"/></svg> Get them on Google Play
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="pile">
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush" target="_blank" rel="noopener" aria-label="Card Crush on Google Play" style="--sc:rgba(251,111,146,.55)"><img src="/images/apps/card-crush.png" alt="Card Crush icon" loading="eager" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.crossword" target="_blank" rel="noopener" aria-label="Crossword on Google Play" style="--sc:rgba(18,181,165,.5)"><img src="/images/apps/crossword.png" alt="Crossword icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.kitty" target="_blank" rel="noopener" aria-label="Kitty on Google Play" style="--sc:rgba(249,135,31,.5)"><img src="/images/apps/kitty.png" alt="Kitty icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.tapregret" target="_blank" rel="noopener" aria-label="Tap & Regret on Google Play" style="--sc:rgba(46,125,255,.5)"><img src="/images/apps/tap-regret.png" alt="Tap & Regret icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.diwashdahal.guesstheword" target="_blank" rel="noopener" aria-label="Guess the Word on Google Play" style="--sc:rgba(226,59,46,.5)"><img src="/images/apps/guess-the-word.png" alt="Guess the Word icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.deusibhailo" target="_blank" rel="noopener" aria-label="Deusi Bhailo on Google Play" style="--sc:rgba(34,197,94,.5)"><img src="/images/apps/deusi-bhailo.png" alt="Deusi Bhailo icon" width="150" height="150"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- RIBBON -->
+<div class="ribbon" aria-hidden="true">
+  <div class="track">
+    <div class="mq">
+      <span>MATCH</span><span>SOLVE</span><span>SHUFFLE</span><span>DEAL</span><span>TAP</span><span>GUESS</span><span>WIN</span><span>PLAY</span>
+    </div>
+    <div class="mq">
+      <span>MATCH</span><span>SOLVE</span><span>SHUFFLE</span><span>DEAL</span><span>TAP</span><span>GUESS</span><span>WIN</span><span>PLAY</span>
+    </div>
+  </div>
+</div>
+
+<!-- GAMES -->
+<section id="games">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The catalog</span>
+      <h2 class="title">Six little worlds to play in</h2>
+      <p>Every one is free on Google Play and rated for Everyone. No sign-up, no fuss — just tap and play.</p>
+    </div>
+
+    <div class="games-grid">
+
+      <!-- Card Crush -->
+      <article class="game reveal" style="--a:var(--c-cardcrush)">
+        <div class="game-top">
+          <div class="game-ico"><img src="/images/apps/card-crush.png" alt="Card Crush icon" width="72" height="72"></div>
+          <div>
+            <span class="cat">Puzzle</span>
+            <h3>Card Crush: Match Suits</h3>
+          </div>
+        </div>
+        <p>Match-3, but with a full deck. Line up hearts, diamonds, clubs and spades to clear the board and beat each level's target.</p>
+        <div class="tags"><span class="tag">Match-3</span><span class="tag">Card twist</span><span class="tag">Everyone</span></div>
+        <div class="game-foot">
+          <a class="btn small" href="https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Play
+          </a>
+          <a class="privacy-link" href="CARD_CRUSH_PRIVACY_POLICY.html">Privacy</a>
+        </div>
+      </article>
+
+      <!-- Crossword -->
+      <article class="game reveal" style="--a:var(--c-crossword)">
+        <div class="game-top">
+          <div class="game-ico"><img src="/images/apps/crossword.png" alt="Crossword icon" width="72" height="72"></div>
+          <div>
+            <span class="cat">Word</span>
+            <h3>Crossword: Word Puzzles</h3>
+          </div>
+        </div>
+        <p>A cozy drag-and-drop crossword. Slide letter tiles into 100 hand-built levels using clear clues — fully offline, no account needed.</p>
+        <div class="tags"><span class="tag">100 levels</span><span class="tag">Offline</span><span class="tag">No IAP</span></div>
+        <div class="game-foot">
+          <a class="btn small" href="https://play.google.com/store/apps/details?id=com.gilobyte.crossword" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Play
+          </a>
+          <a class="privacy-link" href="CROSSWORD_PRIVACY_POLICY.html">Privacy</a>
+        </div>
+      </article>
+
+      <!-- Kitty -->
+      <article class="game reveal" style="--a:var(--c-kitty)">
+        <div class="game-top">
+          <div class="game-ico"><img src="/images/apps/kitty.png" alt="Kitty: Card Showdown icon" width="72" height="72"></div>
+          <div>
+            <span class="cat">Card</span>
+            <h3>Kitty: Card Showdown</h3>
+          </div>
+        </div>
+        <p>A cat-themed twist on the classic Kitti showdown. Split nine cards into three sharp hands and outsmart three cheeky AI cats.</p>
+        <div class="tags"><span class="tag">Offline</span><span class="tag">No ads</span><span class="tag">No IAP</span></div>
+        <div class="game-foot">
+          <a class="btn small" href="https://play.google.com/store/apps/details?id=com.gilobyte.kitty" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Play
+          </a>
+          <a class="privacy-link" href="KITTY_PRIVACY_POLICY.html">Privacy</a>
+        </div>
+      </article>
+
+      <!-- Tap & Regret -->
+      <article class="game reveal" style="--a:var(--c-tapregret)">
+        <div class="game-top">
+          <div class="game-ico"><img src="/images/apps/tap-regret.png" alt="Tap & Regret icon" width="72" height="72"></div>
+          <div>
+            <span class="cat">Casual</span>
+            <h3>Tap &amp; Regret: ZigZag Run</h3>
+          </div>
+        </div>
+        <p>One tap, one wall, endless zigzag. Time every turn to stay on the path and chase a high score — easy to learn, brutal to master.</p>
+        <div class="tags"><span class="tag">One-tap</span><span class="tag">Endless</span><span class="tag">Reflex</span></div>
+        <div class="game-foot">
+          <a class="btn small" href="https://play.google.com/store/apps/details?id=com.gilobyte.tapregret" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Play
+          </a>
+          <a class="privacy-link" href="TAP_REGRET_PRIVACY_POLICY.html">Privacy</a>
+        </div>
+      </article>
+
+      <!-- Guess the Word -->
+      <article class="game reveal" style="--a:var(--c-guessword)">
+        <div class="game-top">
+          <div class="game-ico"><img src="/images/apps/guess-the-word.png" alt="Guess the Word icon" width="72" height="72"></div>
+          <div>
+            <span class="cat">Word</span>
+            <h3>Guess the Word</h3>
+          </div>
+        </div>
+        <p>Read the clue, rearrange the letters, and figure out the hidden word. A quick brain-teaser for word lovers of any age.</p>
+        <div class="tags"><span class="tag">Word game</span><span class="tag">Brain teaser</span><span class="tag">Everyone</span></div>
+        <div class="game-foot">
+          <a class="btn small" href="https://play.google.com/store/apps/details?id=com.diwashdahal.guesstheword" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Play
+          </a>
+        </div>
+      </article>
+
+      <!-- Deusi Bhailo -->
+      <article class="game reveal" style="--a:var(--c-deusi)">
+        <div class="game-top">
+          <div class="game-ico"><img src="/images/apps/deusi-bhailo.png" alt="Deusi Bhailo icon" width="72" height="72"></div>
+          <div>
+            <span class="cat">Culture</span>
+            <h3>Deusi Bhailo</h3>
+          </div>
+        </div>
+        <p>Celebrate Tihar with the complete lyrics of traditional Deusi Bhailo songs — sing along and keep the festival spirit alive with family and friends.</p>
+        <div class="tags"><span class="tag">Tihar</span><span class="tag">Lyrics</span><span class="tag">Nepali</span></div>
+        <div class="game-foot">
+          <a class="btn small" href="https://play.google.com/store/apps/details?id=com.deusibhailo" target="_blank" rel="noopener">
+            <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Get it
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPOTLIGHT -->
+<section class="spotlight">
+  <div class="wrap">
+    <div class="spot-card reveal">
+      <div class="phone">
+        <img src="/images/apps/shot-card-crush.png" alt="Card Crush gameplay screenshot" loading="lazy" width="230" height="498">
+      </div>
+      <div class="spot-body">
+        <span class="eyebrow">Now playing · Card Crush</span>
+        <h2>Think match-3 is all fruit and jewels? Time to shuffle the deck.</h2>
+        <p>Card Crush swaps the usual candy for a full suit of hearts, diamonds, clubs and spades. Every stage has its own target, so it's not about matching fast — it's about matching smart. Easy to pick up, tough to put down.</p>
+        <a class="btn" style="--b:var(--c-cardcrush)" href="https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush" target="_blank" rel="noopener">
+          <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Play Card Crush
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO / VALUES -->
+<section id="studio">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why our games feel good</span>
+      <h2 class="title">Small on purpose</h2>
+      <p>We'd rather make a handful of games we love than a hundred we don't. Here's what that means for you.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value reveal" style="--vc:var(--c-kitty)">
+        <div class="ic">🍵</div>
+        <h3>Coffee-break sized</h3>
+        <p>Quick rounds you can start and finish in a few minutes. Perfect for a queue, a commute, or a breather.</p>
+      </div>
+      <div class="value reveal" style="--vc:var(--c-tapregret)">
+        <div class="ic">📴</div>
+        <h3>Plays offline</h3>
+        <p>Games like Crossword and Kitty run with no internet and no sign-up. Your progress saves itself.</p>
+      </div>
+      <div class="value reveal" style="--vc:var(--c-cardcrush)">
+        <div class="ic">🚫</div>
+        <h3>No paywalls</h3>
+        <p>Every game is free. Kitty has no ads and no in-app purchases at all — just cards and cats.</p>
+      </div>
+      <div class="value reveal" style="--vc:var(--c-deusi)">
+        <div class="ic">❤️</div>
+        <h3>Made with heart</h3>
+        <p>A one-studio operation that sweats the details — clean design, satisfying feedback, and a personal touch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section id="culture">
+  <div class="wrap">
+    <div class="culture reveal">
+      <div class="inner">
+        <div>
+          <span class="eyebrow">🇳🇵 Close to home</span>
+          <h2>Games rooted a little closer to home</h2>
+          <p>Alongside our casual puzzles, we build things closer to home — like <strong>Deusi Bhailo</strong>, which brings the songs of Nepal's Tihar festival to your phone, and <strong>Kitty</strong>, our cat-themed take on the beloved Kitti card game. Play that feels familiar, wherever you're from.</p>
+        </div>
+        <div class="culture-icos">
+          <img src="/images/apps/deusi-bhailo.png" alt="Deusi Bhailo icon" width="96" height="96">
+          <img src="/images/apps/kitty.png" alt="Kitty icon" width="96" height="96">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="eyebrow">Say hi 👋</span>
+      <h2>Got an idea, a bug, or a hello?</h2>
+      <p>We read everything. Tell us what you're playing, what broke, or what you'd love to see next.</p>
+      <div class="contact-actions">
+        <a class="btn grad" href="mailto:gilobyte.com@gmail.com">Email the studio</a>
+        <a class="btn ghost" href="https://play.google.com/store/apps/developer?id=GiloByte" target="_blank" rel="noopener">
+          <svg class="tri" aria-hidden="true"><use href="#gplay"/></svg> See all our games
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 GiloByte. All rights reserved.</p>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><span class="mark"><span>G</span></span> GiloByte</a>
+        <p>A tiny indie studio making cozy little games for Android. Play, learn, win — repeat.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Games</h4>
+        <a href="https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush" target="_blank" rel="noopener">Card Crush</a>
+        <a href="https://play.google.com/store/apps/details?id=com.gilobyte.crossword" target="_blank" rel="noopener">Crossword</a>
+        <a href="https://play.google.com/store/apps/details?id=com.gilobyte.kitty" target="_blank" rel="noopener">Kitty</a>
+        <a href="https://play.google.com/store/apps/details?id=com.gilobyte.tapregret" target="_blank" rel="noopener">Tap &amp; Regret</a>
+        <a href="https://play.google.com/store/apps/details?id=com.diwashdahal.guesstheword" target="_blank" rel="noopener">Guess the Word</a>
+        <a href="https://play.google.com/store/apps/details?id=com.deusibhailo" target="_blank" rel="noopener">Deusi Bhailo</a>
+      </div>
+      <div class="foot-col">
+        <h4>Studio</h4>
+        <a href="#games">Our games</a>
+        <a href="#studio">Why we build</a>
+        <a href="#culture">Nepali roots</a>
+        <a href="#contact">Contact</a>
+        <a href="https://play.google.com/store/apps/developer?id=GiloByte" target="_blank" rel="noopener">Google Play</a>
+      </div>
+      <div class="foot-col">
+        <h4>Privacy</h4>
+        <a href="CARD_CRUSH_PRIVACY_POLICY.html">Card Crush</a>
+        <a href="CROSSWORD_PRIVACY_POLICY.html">Crossword</a>
+        <a href="KITTY_PRIVACY_POLICY.html">Kitty</a>
+        <a href="TAP_REGRET_PRIVACY_POLICY.html">Tap &amp; Regret</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> GiloByte. All rights reserved.</span>
+      <span>Cozy little games for Android · <a href="mailto:gilobyte.com@gmail.com">gilobyte.com@gmail.com</a></span>
+    </div>
+  </div>
 </footer>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav shadow on scroll
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('scrolled', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Scroll reveal
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
 
 </body>
 </html>
