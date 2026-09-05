@@ -5,22 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GiloByte — cozy little games for Android</title>
 <meta name="description" content="GiloByte is a small indie studio making cozy, pick-up-and-play puzzles and card games for Android — free, offline-friendly, and built to fit a coffee break.">
+<link rel="canonical" href="https://gilobyte.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#fff7f0">
-<link rel="icon" href="/images/logo.png">
+
+<!-- Icons / PWA -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="GiloByte">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="GiloByte">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="GiloByte — cozy little games for Android">
-<meta property="og:description" content="A small indie studio making cozy puzzles and card games for Android. Free, offline-friendly, made with a little Nepali soul.">
-<meta property="og:image" content="https://gilobyte.com/images/banner.png">
-<meta property="og:url" content="https://gilobyte.com">
+<meta property="og:description" content="A small indie studio making cozy puzzles and card games for Android. Free, offline-friendly, and just the right size for a coffee break.">
+<meta property="og:image" content="https://gilobyte.com/images/banner.jpg">
+<meta property="og:image:width" content="1119">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GiloByte — cozy little games for Android">
+<meta property="og:url" content="https://gilobyte.com/">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js');</script>
+
+<!-- Structured data: studio + the catalogue, so Google can show the games as rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gilobyte.com/#studio",
+      "name": "GiloByte",
+      "url": "https://gilobyte.com/",
+      "logo": "https://gilobyte.com/images/icon-512.png",
+      "email": "gilobyte.com@gmail.com",
+      "description": "A tiny indie studio making cozy puzzles and card games for Android.",
+      "sameAs": ["https://play.google.com/store/apps/developer?id=GiloByte"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gilobyte.com/#website",
+      "url": "https://gilobyte.com/",
+      "name": "GiloByte",
+      "publisher": { "@id": "https://gilobyte.com/#studio" }
+    },
+    {
+      "@type": "ItemList",
+      "name": "GiloByte games",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": {
+          "@type": "MobileApplication", "name": "Card Crush: Match Suits",
+          "applicationCategory": "GameApplication", "applicationSubCategory": "Puzzle",
+          "operatingSystem": "Android", "image": "https://gilobyte.com/images/apps/card-crush.webp",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush",
+          "author": { "@id": "https://gilobyte.com/#studio" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }},
+        { "@type": "ListItem", "position": 2, "item": {
+          "@type": "MobileApplication", "name": "Crossword: Word Puzzles",
+          "applicationCategory": "GameApplication", "applicationSubCategory": "Word",
+          "operatingSystem": "Android", "image": "https://gilobyte.com/images/apps/crossword.webp",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.gilobyte.crossword",
+          "author": { "@id": "https://gilobyte.com/#studio" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }},
+        { "@type": "ListItem", "position": 3, "item": {
+          "@type": "MobileApplication", "name": "Kitty: Card Showdown",
+          "applicationCategory": "GameApplication", "applicationSubCategory": "Card",
+          "operatingSystem": "Android", "image": "https://gilobyte.com/images/apps/kitty.webp",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.gilobyte.kitty",
+          "author": { "@id": "https://gilobyte.com/#studio" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }},
+        { "@type": "ListItem", "position": 4, "item": {
+          "@type": "MobileApplication", "name": "Tap & Regret: ZigZag Run",
+          "applicationCategory": "GameApplication", "applicationSubCategory": "Casual",
+          "operatingSystem": "Android", "image": "https://gilobyte.com/images/apps/tap-regret.webp",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.gilobyte.tapregret",
+          "author": { "@id": "https://gilobyte.com/#studio" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }},
+        { "@type": "ListItem", "position": 5, "item": {
+          "@type": "MobileApplication", "name": "Guess the Word",
+          "applicationCategory": "GameApplication", "applicationSubCategory": "Word",
+          "operatingSystem": "Android", "image": "https://gilobyte.com/images/apps/guess-the-word.webp",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.diwashdahal.guesstheword",
+          "author": { "@id": "https://gilobyte.com/#studio" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }},
+        { "@type": "ListItem", "position": 6, "item": {
+          "@type": "MobileApplication", "name": "Deusi Bhailo",
+          "applicationCategory": "ReferenceApplication",
+          "operatingSystem": "Android", "image": "https://gilobyte.com/images/apps/deusi-bhailo.webp",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.deusibhailo",
+          "author": { "@id": "https://gilobyte.com/#studio" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -50,15 +143,22 @@
       <span class="mark"><span>G</span></span>
       GiloByte
     </a>
-    <nav class="nav-links" aria-label="Primary">
+    <nav class="nav-links" id="nav-menu" aria-label="Primary">
       <a class="lnk" href="#games">Games</a>
       <a class="lnk" href="#studio">Studio</a>
       <a class="lnk" href="#culture">Culture</a>
       <a class="lnk" href="#contact">Contact</a>
+      <a class="btn grad small nav-cta-mobile" href="https://play.google.com/store/apps/developer?id=GiloByte" target="_blank" rel="noopener">
+        <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Google Play
+      </a>
     </nav>
     <a class="btn grad small nav-cta" href="https://play.google.com/store/apps/developer?id=GiloByte" target="_blank" rel="noopener">
       <svg class="tri" aria-hidden="true"><use href="#gplay-mono"/></svg> Google Play
     </a>
+    <button class="nav-toggle" id="navToggle" type="button"
+            aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
   </div>
 </header>
 
@@ -81,12 +181,12 @@
 
       <div class="hero-art">
         <div class="pile">
-          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush" target="_blank" rel="noopener" aria-label="Card Crush on Google Play" style="--sc:rgba(251,111,146,.55)"><img src="/images/apps/card-crush.png" alt="Card Crush icon" loading="eager" width="150" height="150"></a>
-          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.crossword" target="_blank" rel="noopener" aria-label="Crossword on Google Play" style="--sc:rgba(18,181,165,.5)"><img src="/images/apps/crossword.png" alt="Crossword icon" width="150" height="150"></a>
-          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.kitty" target="_blank" rel="noopener" aria-label="Kitty on Google Play" style="--sc:rgba(249,135,31,.5)"><img src="/images/apps/kitty.png" alt="Kitty icon" width="150" height="150"></a>
-          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.tapregret" target="_blank" rel="noopener" aria-label="Tap & Regret on Google Play" style="--sc:rgba(46,125,255,.5)"><img src="/images/apps/tap-regret.png" alt="Tap & Regret icon" width="150" height="150"></a>
-          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.diwashdahal.guesstheword" target="_blank" rel="noopener" aria-label="Guess the Word on Google Play" style="--sc:rgba(226,59,46,.5)"><img src="/images/apps/guess-the-word.png" alt="Guess the Word icon" width="150" height="150"></a>
-          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.deusibhailo" target="_blank" rel="noopener" aria-label="Deusi Bhailo on Google Play" style="--sc:rgba(34,197,94,.5)"><img src="/images/apps/deusi-bhailo.png" alt="Deusi Bhailo icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.cardcrush" target="_blank" rel="noopener" aria-label="Card Crush on Google Play" style="--sc:rgba(251,111,146,.55)"><img src="/images/apps/card-crush.webp" alt="Card Crush icon" loading="eager" fetchpriority="high" decoding="async" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.crossword" target="_blank" rel="noopener" aria-label="Crossword on Google Play" style="--sc:rgba(18,181,165,.5)"><img src="/images/apps/crossword.webp" alt="Crossword icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.kitty" target="_blank" rel="noopener" aria-label="Kitty on Google Play" style="--sc:rgba(249,135,31,.5)"><img src="/images/apps/kitty.webp" alt="Kitty icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.gilobyte.tapregret" target="_blank" rel="noopener" aria-label="Tap & Regret on Google Play" style="--sc:rgba(46,125,255,.5)"><img src="/images/apps/tap-regret.webp" alt="Tap & Regret icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.diwashdahal.guesstheword" target="_blank" rel="noopener" aria-label="Guess the Word on Google Play" style="--sc:rgba(226,59,46,.5)"><img src="/images/apps/guess-the-word.webp" alt="Guess the Word icon" width="150" height="150"></a>
+          <a class="sticker" href="https://play.google.com/store/apps/details?id=com.deusibhailo" target="_blank" rel="noopener" aria-label="Deusi Bhailo on Google Play" style="--sc:rgba(34,197,94,.5)"><img src="/images/apps/deusi-bhailo.webp" alt="Deusi Bhailo icon" width="150" height="150"></a>
         </div>
       </div>
     </div>
@@ -119,7 +219,7 @@
       <!-- Card Crush -->
       <article class="game reveal" style="--a:var(--c-cardcrush)">
         <div class="game-top">
-          <div class="game-ico"><img src="/images/apps/card-crush.png" alt="Card Crush icon" width="72" height="72"></div>
+          <div class="game-ico"><img src="/images/apps/card-crush.webp" alt="Card Crush icon" loading="lazy" decoding="async" width="72" height="72"></div>
           <div>
             <span class="cat">Puzzle</span>
             <h3>Card Crush: Match Suits</h3>
@@ -138,7 +238,7 @@
       <!-- Crossword -->
       <article class="game reveal" style="--a:var(--c-crossword)">
         <div class="game-top">
-          <div class="game-ico"><img src="/images/apps/crossword.png" alt="Crossword icon" width="72" height="72"></div>
+          <div class="game-ico"><img src="/images/apps/crossword.webp" alt="Crossword icon" loading="lazy" decoding="async" width="72" height="72"></div>
           <div>
             <span class="cat">Word</span>
             <h3>Crossword: Word Puzzles</h3>
@@ -157,7 +257,7 @@
       <!-- Kitty -->
       <article class="game reveal" style="--a:var(--c-kitty)">
         <div class="game-top">
-          <div class="game-ico"><img src="/images/apps/kitty.png" alt="Kitty: Card Showdown icon" width="72" height="72"></div>
+          <div class="game-ico"><img src="/images/apps/kitty.webp" alt="Kitty: Card Showdown icon" loading="lazy" decoding="async" width="72" height="72"></div>
           <div>
             <span class="cat">Card</span>
             <h3>Kitty: Card Showdown</h3>
@@ -176,7 +276,7 @@
       <!-- Tap & Regret -->
       <article class="game reveal" style="--a:var(--c-tapregret)">
         <div class="game-top">
-          <div class="game-ico"><img src="/images/apps/tap-regret.png" alt="Tap & Regret icon" width="72" height="72"></div>
+          <div class="game-ico"><img src="/images/apps/tap-regret.webp" alt="Tap & Regret icon" loading="lazy" decoding="async" width="72" height="72"></div>
           <div>
             <span class="cat">Casual</span>
             <h3>Tap &amp; Regret: ZigZag Run</h3>
@@ -195,7 +295,7 @@
       <!-- Guess the Word -->
       <article class="game reveal" style="--a:var(--c-guessword)">
         <div class="game-top">
-          <div class="game-ico"><img src="/images/apps/guess-the-word.png" alt="Guess the Word icon" width="72" height="72"></div>
+          <div class="game-ico"><img src="/images/apps/guess-the-word.webp" alt="Guess the Word icon" loading="lazy" decoding="async" width="72" height="72"></div>
           <div>
             <span class="cat">Word</span>
             <h3>Guess the Word</h3>
@@ -213,7 +313,7 @@
       <!-- Deusi Bhailo -->
       <article class="game reveal" style="--a:var(--c-deusi)">
         <div class="game-top">
-          <div class="game-ico"><img src="/images/apps/deusi-bhailo.png" alt="Deusi Bhailo icon" width="72" height="72"></div>
+          <div class="game-ico"><img src="/images/apps/deusi-bhailo.webp" alt="Deusi Bhailo icon" loading="lazy" decoding="async" width="72" height="72"></div>
           <div>
             <span class="cat">Culture</span>
             <h3>Deusi Bhailo</h3>
@@ -237,7 +337,7 @@
   <div class="wrap">
     <div class="spot-card reveal">
       <div class="phone">
-        <img src="/images/apps/shot-card-crush.png" alt="Card Crush gameplay screenshot" loading="lazy" width="230" height="498">
+        <img src="/images/apps/shot-card-crush.webp" alt="Card Crush gameplay screenshot" loading="lazy" decoding="async" width="230" height="498">
       </div>
       <div class="spot-body">
         <span class="eyebrow">Now playing · Card Crush</span>
@@ -295,8 +395,8 @@
           <p>Alongside our casual puzzles, we build things closer to home — like <strong>Deusi Bhailo</strong>, which brings the songs of Nepal's Tihar festival to your phone, and <strong>Kitty</strong>, our cat-themed take on the beloved Kitti card game. Play that feels familiar, wherever you're from.</p>
         </div>
         <div class="culture-icos">
-          <img src="/images/apps/deusi-bhailo.png" alt="Deusi Bhailo icon" width="96" height="96">
-          <img src="/images/apps/kitty.png" alt="Kitty icon" width="96" height="96">
+          <img src="/images/apps/deusi-bhailo.webp" alt="Deusi Bhailo icon" loading="lazy" decoding="async" width="96" height="96">
+          <img src="/images/apps/kitty.webp" alt="Kitty icon" loading="lazy" decoding="async" width="96" height="96">
         </div>
       </div>
     </div>
@@ -371,6 +471,43 @@
   var onScroll = function(){ nav.classList.toggle('scrolled', window.scrollY > 8); };
   onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
 
+  // Mobile nav panel
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('nav-menu');
+
+  function setMenu(open){
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+
+  toggle.addEventListener('click', function(){
+    setMenu(!nav.classList.contains('menu-open'));
+  });
+
+  // Tapping a link navigates and closes
+  menu.addEventListener('click', function(e){
+    if(e.target.closest('a')) setMenu(false);
+  });
+
+  // Escape closes and returns focus to the button
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('menu-open')){
+      setMenu(false); toggle.focus();
+    }
+  });
+
+  // Tapping outside closes
+  document.addEventListener('click', function(e){
+    if(!nav.classList.contains('menu-open')) return;
+    if(!e.target.closest('#nav-menu') && !e.target.closest('#navToggle')) setMenu(false);
+  });
+
+  // Don't leave a stale open panel behind when rotating to desktop width
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 620 && nav.classList.contains('menu-open')) setMenu(false);
+  }, {passive:true});
+
   // Scroll reveal
   var reveals = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
@@ -382,6 +519,43 @@
     reveals.forEach(function(el){ io.observe(el); });
   } else {
     reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+<!-- ==========================================================================
+     Analytics — OFF until you fill in an ID.
+
+     Right now the site has no measurement at all, so there's no way to know
+     whether the domain gets traffic or which game people click. Put your GA4
+     measurement ID below (looks like 'G-XXXXXXXXXX') and this switches on.
+     Left blank, it does nothing and loads nothing.
+
+     Cookieless alternative, if you'd rather skip a consent banner:
+     Cloudflare Web Analytics — one script tag, free, no cookies.
+     ========================================================================== -->
+<script>
+  var GA_MEASUREMENT_ID = ''; // ← paste your G-XXXXXXXXXX here
+
+  if (GA_MEASUREMENT_ID) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    document.head.appendChild(s);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', GA_MEASUREMENT_ID);
+
+    // Which game are people actually tapping through to?
+    document.querySelectorAll('a[href*="play.google.com"]').forEach(function(a){
+      a.addEventListener('click', function(){
+        gtag('event', 'play_store_click', {
+          link_url: a.href,
+          game: (a.getAttribute('aria-label') || a.textContent || '').trim()
+        });
+      });
+    });
   }
 </script>
 
