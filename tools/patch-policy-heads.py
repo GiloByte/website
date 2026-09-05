@@ -20,8 +20,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = {
     "CARD_CRUSH_PRIVACY_POLICY.html": ("Card Crush: Match Suits", True),
     "CROSSWORD_PRIVACY_POLICY.html": ("Crossword: Word Puzzles", True),
-    "KITTY_PRIVACY_POLICY.html": ("Kitty: Card Showdown", True),
-    "TAP_REGRET_PRIVACY_POLICY.html": ("Tap & Regret: ZigZag Run", True),
+    # Unlisted on Play: policy stays reachable for existing users, but noindex.
+    "KITTY_PRIVACY_POLICY.html": ("Kitty: Card Showdown", False),
+    "TAP_REGRET_PRIVACY_POLICY.html": ("Tap & Regret: ZigZag Run", False),
     # Retired app, kept only so any old store listing doesn't 404.
     "DMD_PRIVACY_POLICY.html": ("Drag Me Down", False),
 }

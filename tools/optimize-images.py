@@ -49,13 +49,12 @@ def main():
 
     # ---- App icons -------------------------------------------------------
     # Rendered at 150px (hero) and 72/96px (cards). 320px covers 2x DPR.
+    # Live catalogue only. Kitty / Tap & Regret / Deusi Bhailo are unlisted;
+    # their PNG masters stay in the repo in case anything gets relisted.
     icons = [
         "card-crush",
         "crossword",
-        "kitty",
-        "tap-regret",
         "guess-the-word",
-        "deusi-bhailo",
     ]
     for name in icons:
         src = p("images", "apps", f"{name}.png")
