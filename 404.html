@@ -1,1 +1,89 @@
-Looks like you are lost my friend .. here take a potion of love and elevate from this material world.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost your way — GiloByte</title>
+<meta name="description" content="This page wandered off. Head back to GiloByte's cozy little games for Android.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#fff7f0">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<link rel="stylesheet" href="/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  .lost{min-height:82vh;display:grid;place-items:center;text-align:center;padding:40px 20px}
+  .lost .code{
+    font-family:var(--font-display);font-weight:700;line-height:.9;
+    font-size:clamp(5.5rem,20vw,11rem);letter-spacing:-.03em;
+    background:linear-gradient(120deg,var(--brand),var(--brand-grad) 45%,var(--brand-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    margin-bottom:10px;
+  }
+  .lost h1{font-family:var(--font-display);font-weight:700;
+    font-size:clamp(1.5rem,4vw,2.3rem);margin-bottom:14px}
+  .lost p{color:var(--ink-soft);max-width:46ch;margin:0 auto 12px;font-size:1.05rem}
+  .lost .potion{font-size:2.2rem;display:block;margin-bottom:22px}
+  .lost .actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+  .lost .picks{
+    display:flex;flex-wrap:wrap;gap:12px;justify-content:center;
+    margin-top:44px;padding-top:30px;border-top:1px solid var(--line);
+    max-width:560px;margin-inline:auto;
+  }
+  .lost .picks a{display:grid;place-items:center;gap:7px;
+    font-family:var(--font-display);font-weight:600;font-size:.8rem;color:var(--ink-soft)}
+  .lost .picks a:hover{color:var(--ink)}
+  .lost .picks img{width:56px;height:56px;border-radius:15px;
+    box-shadow:var(--shadow-soft);transition:transform .2s ease}
+  .lost .picks a:hover img{transform:translateY(-4px) rotate(-4deg)}
+  .lost .picks .lbl{display:block}
+</style>
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <span class="blob b3"></span><span class="blob b4"></span>
+</div>
+
+<main class="lost">
+  <div class="wrap">
+    <div class="code">404</div>
+    <span class="potion" aria-hidden="true">🧪</span>
+    <h1>Looks like you are lost, my friend.</h1>
+    <p>Here, take a potion of love and elevate from this material world — or just head back and play something.</p>
+
+    <div class="actions">
+      <a class="btn grad" href="/">Back to GiloByte</a>
+      <a class="btn ghost" href="/#games">Browse the games</a>
+    </div>
+
+    <div class="picks">
+      <a href="/#games" aria-label="Card Crush">
+        <img src="/images/apps/card-crush.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <span class="lbl">Card Crush</span>
+      </a>
+      <a href="/#games" aria-label="Crossword">
+        <img src="/images/apps/crossword.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <span class="lbl">Crossword</span>
+      </a>
+      <a href="/#games" aria-label="Kitty">
+        <img src="/images/apps/kitty.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <span class="lbl">Kitty</span>
+      </a>
+      <a href="/#games" aria-label="Tap and Regret">
+        <img src="/images/apps/tap-regret.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <span class="lbl">Tap &amp; Regret</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
