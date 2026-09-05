@@ -18,16 +18,4 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  <url>
-    <loc>https://gilobyte.com/KITTY_PRIVACY_POLICY.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://gilobyte.com/TAP_REGRET_PRIVACY_POLICY.html</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 </urlset>
