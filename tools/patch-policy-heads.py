@@ -20,6 +20,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = {
     "CARD_CRUSH_PRIVACY_POLICY.html": ("Card Crush: Match Suits", True),
     "CROSSWORD_PRIVACY_POLICY.html": ("Crossword: Word Puzzles", True),
+    "BANANA_MART_PRIVACY_POLICY.html": ("Banana Mart: Harvest & Sell", True),
     # Unlisted on Play: policy stays reachable for existing users, but noindex.
     "KITTY_PRIVACY_POLICY.html": ("Kitty: Card Showdown", False),
     "TAP_REGRET_PRIVACY_POLICY.html": ("Tap & Regret: ZigZag Run", False),
