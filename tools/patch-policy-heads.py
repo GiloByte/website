@@ -18,7 +18,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # file -> (app name, indexable)
 PAGES = {
-    "CARD_CRUSH_PRIVACY_POLICY.html": ("Card Crush: Match Suits", True),
+    "CARD_CRUSH_PRIVACY_POLICY.html": ("Suit Shuffle: Match 3 Puzzle", True),
+    "SUIT_SHUFFLE_PRIVACY_POLICY.html": ("Suit Shuffle: Match 3 Puzzle", True),
     "CROSSWORD_PRIVACY_POLICY.html": ("Crossword: Word Puzzles", True),
     "BANANA_MART_PRIVACY_POLICY.html": ("Banana Mart: Harvest & Sell", True),
     # Unlisted on Play: policy stays reachable for existing users, but noindex.
